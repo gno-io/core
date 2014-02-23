@@ -1,0 +1,23 @@
+<template name="body">
+<div id="gno-container">
+	<div id="gno-left-column">
+		{{> left-column }}
+	</div>
+	<div id="gno-content" class="{{#if showContent }}opened{{/if}}">	
+	</div>
+	<div id="gno-right-columns">
+		<div class="gno-header">
+			<div id="gno-history">
+			</div>
+			<div id="gno-login">
+				{{loginButtons align="left"}}
+			</div>
+		</div>
+		<div id="gno-columns">
+
+			{{{ renderColumns }}}
+
+		</div>
+	</div>
+</div>
+</template>

@@ -1,0 +1,50 @@
+trans-gray = rgba(160,160,160,.5)
+index-border = 1px solid #333
+
+.gno-column-body
+	padding 0px 3px
+	background-color trans-gray
+	height 100%
+
+.gno-column-head
+	text-align center
+	margin-top -5px
+	padding 10px
+	background-color #333
+	color #fafafa
+	border-radius 4px
+	
+.gno-index-head, .gno-index-body
+	background-color trans-gray
+	text-align center
+
+.gno-index-head
+	border-top index-border
+	
+.gno-index-body
+	display none
+	transition all toggle-duration
+	border-bottom index-border
+	padding 5px
+	// &.opened
+	//	display block
+
+.gno-handle
+	display block
+	background-color trans-black
+	padding 10px
+	border-radius 5px
+	
+.gno-bar
+	border-top 1px black solid
+	border-bottom 1px black solid
+	padding 6px
+	margin 10px 0
+	a.gno-bar-handle
+		border-radius 4px
+		border 1px solid gray
+		padding 3px
+		&:hover 
+			cursor pointer
+	
+	

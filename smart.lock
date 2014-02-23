@@ -1,0 +1,27 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "event-hooks": {},
+      "spin": {},
+      "jquery-autosize": {}
+    },
+    "packages": {
+      "event-hooks": {
+        "git": "https://github.com/BenjaminRH/meteor-event-hooks.git",
+        "tag": "v1.4.3",
+        "commit": "ba4f3d7887748458618d29615492906f0c88d31c"
+      },
+      "spin": {
+        "git": "https://github.com/SachaG/meteor-spin.git",
+        "tag": "v0.2.2",
+        "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
+      },
+      "jquery-autosize": {
+        "git": "https://github.com/spendflow/meteor-jquery-autosize.git",
+        "tag": "v1.17.8r1",
+        "commit": "517be3d26cb2901f65d07de94d250e498d07dc48"
+      }
+    }
+  }
+}

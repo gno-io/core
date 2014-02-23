@@ -1,0 +1,6 @@
+A general note (and WARNING!) about migrations, and data in Gno in 
+general:
+
+Every key in the topmost level of the object is reduced to just the 
+first character (in order to save space). Thus, we must take care not
+to begin any two fields with the same letter.

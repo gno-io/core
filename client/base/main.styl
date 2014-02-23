@@ -1,0 +1,114 @@
+/*  main.styl
+ *
+ *	Should contain only the styling elements that are
+ *	structurally fundamental to the site's basic 
+ *	functionality and appearance.
+ * 
+ *	Other styling of the basic app should go in 
+ *	styles/default.styl.
+ *
+ *
+/*  ---------  */
+/***VARIABLES***/
+/*  ---------  */
+
+// spacing
+pg-width = 68%
+margin-width  = 200px
+expanded-margin-width = 100% - margin-width
+min-pg-width  = 300px
+header-height = 50px
+column-width = 200px
+
+// colors
+trans-gray 	= rgba(40,40,40,.2)
+trans-black = rgba(0,0,0,.2)
+trans-white = rgba(255,235,235,.02)
+
+// transitions
+toggle-duration = 600ms
+
+transition()
+	-webkit-transition arguments
+	-moz-transition arguments
+	-o-transition arguments 
+	transition arguments
+
+/*   ------   */
+/****STYLES****/
+/*   ------   */
+html, body
+	margin 0
+	padding 0
+
+#gno-container
+	height 100%
+	width 100%
+	overflow hidden
+	margin 0
+	position absolute
+
+div.gno-header
+	display block
+	height header-height
+	padding 10px
+	z-index 9999 
+
+#gno-content
+	z-index -1
+	overflow hidden
+	transition width toggle-duration
+	float left
+	height 100%
+	width 0
+	&.opened
+		width pg-width
+
+#gno-right-columns
+	overflow hidden
+	z-index 1
+	transition width toggle-duration
+	transition-timing-function ease
+	border-left 4px solid trans-black
+	height 100%
+	background-color trans-gray
+	&.contracted
+		width margin-width
+	
+#gno-left-column, #gno-right-columns
+	height 100%
+	
+#gno-left-column
+	float left
+	width margin-width
+	border-right 4px solid trans-black
+
+.gno-column
+	height 100%
+	width column-width
+	margin 0 8px
+
+.gno-page
+	transition background-color toggle-duration
+	padding 10px
+	margin-bottom 15px
+	
+#gno-login
+	float right
+	margin auto
+
+.hidden
+	display none
+
+.gno-index-head
+	padding 10px
+	transition color 1s
+	&:hover
+		cursor pointer
+
+.gno-handle
+	&:hover
+		cursor pointer
+	
+	
+

@@ -1,0 +1,17 @@
+<template name="index">
+	<div class="gno-index" id="{{id}}">
+		<div class="gno-index-head">
+			{{title}}
+		</div>
+		<div class="gno-index-body">
+			{{#each handles}}
+				{{> handle }}
+			{{/each}}
+			<!-- possible optimization: hold off on rendering the indexes completely until the user opens the parent -->
+			{{#each indexes}}
+				{{{ renderIndex this }}}
+			{{/each}}
+		</div>
+	</div>
+</template>
+	

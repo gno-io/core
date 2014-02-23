@@ -1,0 +1,36 @@
+<template name="compositionContent">
+	<div class="gno-section-head">
+		<span class="gno-composition-title">Composition Details</span>
+	</div>
+	<div class="gno-section-body gno-details-input">
+		<textarea class="gno-text-input" name="gno-title" placeholder="Title"></textarea>
+		<textarea class="gno-md-input" name="gno-brief" placeholder="Brief"></textarea>
+	</div>
+	<div class="gno-composition-input">
+		<div class="gno-composition-item">
+			{{> templateBar }}
+		</div>
+		{{>compositionInput}}
+	</div>
+</template>
+
+<template name="templateBar">
+	<div class="gno-template-bar">
+		<div class="gno-bar">
+		{{#each templateHandles }}
+			{{> barHandle }}
+		{{/each}}
+		</div>
+	</div>
+</template>
+		
+<template name="compositionInput">
+<div class="gno-composition-item">
+	<div class="gno-section-head">
+		<span class="gno-composition-title">Content</span>
+	</div>
+	<div class="gno-section-body">
+		<textarea class="gno-md-input"></textarea>
+	</div>
+</div>
+</template>
